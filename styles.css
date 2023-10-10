@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap");
+
+main {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: flex;
+  background-color: rgb(8, 216, 216);
+}
+
+header img {
+  max-height: auto;
+  padding: 5px;
+  object-fit: fill;
+}
+
+header img.p_logo {
+  width: 15%;
+  object-fit: fill;
+}
+
+header img.p_photo {
+  width: 80%;
+  object-fit: fill;
+}
+
+@media (min-width: 600px) {
+  header img {
+    max-height: 200px;
+    padding: 5px;
+    object-fit: fill;
+  }
+}
