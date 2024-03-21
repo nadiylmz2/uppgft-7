@@ -32,5 +32,15 @@ header img#p_logo {
   width: 200px;
 }
 
+nav {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+}
+nav ul li {
+  display: inline-flex;
+  padding: 0 10px;
+}
+
 @media (max-width: 600px) {
 }
