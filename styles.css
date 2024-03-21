@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap");
 
 body {
-  background-color: rgb(15, 15, 86);
+  background-color: wheat;
 }
 
 .center {
@@ -18,23 +18,19 @@ main {
 }
 
 header {
-  position: fixed;
-  max-height: 125px;
   background-color: white;
-  display: block;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  height: 100px;
   width: 100%;
 }
 
 header img#p_logo {
   object-fit: cover;
-  overflow: hidden;
-  height: 125px;
+  height: 100px;
   width: 200px;
 }
-
-/* header img.p_photo {
-  max-width: 75%;
-} */
 
 @media (max-width: 600px) {
 }
