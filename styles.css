@@ -1,34 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap");
 
+body {
+  background-color: rgb(15, 15, 86);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 main {
-  font-family: "Roboto", sans-serif;
+  font-family: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium",
+    "Nimbus Sans Narrow", sans-serif-condensed, sans-serif;
+  font-weight: normal;
 }
 
 header {
-  display: flex;
-  background-color: rgb(8, 216, 216);
+  position: fixed;
+  max-height: 125px;
+  background-color: white;
+  display: block;
+  width: 100%;
 }
 
-header img {
-  max-height: auto;
-  padding: 5px;
-  object-fit: fill;
+header img#p_logo {
+  object-fit: cover;
+  overflow: hidden;
+  height: 125px;
+  width: 200px;
 }
 
-header img.p_logo {
-  width: 15%;
-  object-fit: fill;
-}
+/* header img.p_photo {
+  max-width: 75%;
+} */
 
-header img.p_photo {
-  width: 80%;
-  object-fit: fill;
-}
-
-@media (min-width: 600px) {
-  header img {
-    max-height: 200px;
-    padding: 5px;
-    object-fit: fill;
-  }
+@media (max-width: 600px) {
 }
