@@ -11,7 +11,7 @@ body {
   width: 50%;
 }
 
-main {
+* {
   font-family: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium",
     "Nimbus Sans Narrow", sans-serif-condensed, sans-serif;
   font-weight: normal;
@@ -19,6 +19,9 @@ main {
 
 header {
   background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -32,11 +35,17 @@ header img#p_logo {
   width: 200px;
 }
 
-nav {
-  padding-top: 100px;
+#headernav {
+  top: 100px;
+  left: 0;
+  position: fixed;
   display: flex;
   flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  background-color: red;
 }
+
 nav ul li {
   display: inline-flex;
   padding: 0 10px;
