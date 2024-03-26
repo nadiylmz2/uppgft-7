@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Boka Plats" />
+    <meta name="description" content="Book Hotel" />
     <link rel="stylesheet" href="./styles.css" />
-    <title>Boka Plats</title>
+    <title>Bookning</title>
   </head>
   <body>
     <header>
@@ -13,16 +13,48 @@
         <img src="h_logo.webp" alt="Hotel Logo" id="p_logo" class="center" />
         <nav id="headernav">
           <ul>
-            <li><a href="index.html"> Hem </a></li>
-            <li><a href="boka.html"> Boka </a></li>
-            <li><a href="hitta.html"> Hitta </a></li>
-            <li><a href="kontakta.html"> Kontakta </a></li>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="boka.html"> Bookning </a></li>
+            <li><a href="hitta.html"> Find </a></li>
+            <li><a href="kontakta.html"> Contact </a></li>
           </ul>
         </nav>
       </div>
     </header>
     <main>
-      <div id="footer">
+      <div id="form" class="center">
+        <form>
+          <h2>Bookning</h2>
+          <div>
+            <label>Enter your name: </label>
+            <input type="text" required />
+          </div>
+          <div>
+            <label>Enter your email: </label>
+            <input type="email" required />
+          </div>
+          <div>
+            <label>How many people?: </label>
+            <input type="number" required />
+          </div>
+          <div>
+            <label>Number of rooms: </label>
+            <input type="number" required />
+          </div>
+          <div>
+            <label>Phone Number: </label>
+            <input type="tel" required />
+          </div>
+          <div id="other">
+            <label>Other: </label>
+            <input type="text" id="other-text" />
+          </div>
+          <div>
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
+      <div id="footer" class="center">
         <p>Hotell Bright | Storgatan 1 | 123 45 Storstad | 012 - 12 34 56</p>
       </div>
     </main>
