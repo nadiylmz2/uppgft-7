@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap");
+* {
+  font-family: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium",
+    "Nimbus Sans Narrow", sans-serif-condensed, sans-serif;
+  font-weight: normal;
+}
 
 body {
   background-color: wheat;
@@ -8,12 +13,6 @@ body {
   width: 50%;
   margin: auto;
   display: flex;
-}
-
-* {
-  font-family: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium",
-    "Nimbus Sans Narrow", sans-serif-condensed, sans-serif;
-  font-weight: normal;
 }
 
 header {
@@ -42,6 +41,7 @@ header {
 
 #headernav a {
   color: darkblue;
+  text-decoration: none;
 }
 
 nav ul li {
@@ -90,27 +90,39 @@ nav ul li {
   background-color: tomato;
 }
 
-#form {
+.form {
+  width: 50%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   padding: 10px;
   background-color: rgba(220, 168, 45, 0.648);
-  margin-top: 160px;
+  margin-top: 145px;
   margin-bottom: 10px;
   min-width: 600px;
 }
+
+#form_contact {
+  margin-top: 190px;
+}
+
 label,
-input {
+input,
+textarea {
+  display: flex;
   margin-bottom: 10px;
-  padding-right: 10px;
   width: 300px;
 }
 
-#other-text {
-  height: 100px;
-  width: 300px;
+textarea {
+  height: 75px;
+}
+
+#embed {
+  margin-top: 145px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 700px) {
