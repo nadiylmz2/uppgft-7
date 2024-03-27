@@ -137,6 +137,7 @@ nav ul li {
   height: 5vh;
   align-items: center;
   justify-content: center;
+  text-align: center;
   background-color: tomato;
 }
 
