@@ -9,6 +9,85 @@ body {
   background-color: wheat;
 }
 
+.slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-right: 5vw;
+}
+
+.slider img {
+  object-fit: contain;
+  display: none;
+  float: right;
+}
+
+#ho_photo,
+#h_room1,
+#h_room2 {
+  width: 100%;
+  height: 58vh;
+}
+
+img.displaySlide {
+  display: inline-flex;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  padding: 10px 10px;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 25vh;
+  height: 58vh;
+}
+
+#a_left {
+  width: 30%;
+  margin-left: 5vw;
+  margin-right: 10vw;
+  height: 58vh;
+  background-color: rgb(6, 97, 97);
+  color: rgb(255, 230, 185);
+}
+
+#a_left div {
+  text-align: left;
+  padding: 10px;
+}
+
 .center {
   width: 50%;
   margin: auto;
@@ -34,7 +113,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30px;
+  height: 2.5rem;
   width: 100%;
   background-color: tomato;
 }
@@ -49,42 +128,13 @@ nav ul li {
   padding: 0 10px;
 }
 
-.container {
-  display: inline-flex;
-  justify-content: space-around;
-  width: 100%;
-  height: 100%;
-  margin-top: 150px;
-}
-
-#a_left {
-  width: 40%;
-  background-color: rgb(6, 97, 97);
-  color: rgb(255, 230, 185);
-}
-
-#a_right {
-  float: right;
-  width: 50%;
-}
-
-#ho_photo {
-  width: 100%;
-  height: 100%;
-}
-
-#a_left div {
-  text-align: left;
-  padding: 10px;
-}
-
 #footer {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   width: 100%;
-  height: 30px;
+  height: 5vh;
   align-items: center;
   justify-content: center;
   background-color: tomato;
@@ -98,13 +148,15 @@ nav ul li {
   justify-content: center;
   padding: 10px;
   background-color: rgba(220, 168, 45, 0.648);
-  margin-top: 145px;
+  margin-top: 23vh;
   margin-bottom: 10px;
   min-width: 600px;
 }
 
 #form_contact {
-  margin-top: 190px;
+  margin-top: 20vh;
+  height: 40vw;
+  width: 60vw;
 }
 
 label,
@@ -112,21 +164,197 @@ input,
 textarea {
   display: flex;
   margin-bottom: 10px;
-  width: 300px;
+  width: 40vw;
+  max-width: 40vw;
 }
 
 textarea {
-  height: 75px;
+  max-height: 15vh;
+  height: 20vw;
 }
 
 #embed {
-  margin-top: 145px;
+  margin-top: 25vh;
   display: flex;
   justify-content: center;
 }
 
+.submit-button {
+  max-width: 6vw;
+}
+
 @media (max-width: 700px) {
+  .container {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 25vh;
+    height: 58vh;
+  }
+  .slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-right: 5vw;
+  }
+
+  .slider img {
+    object-fit: contain;
+    display: none;
+    float: right;
+  }
+
+  #ho_photo,
+  #h_room1,
+  #h_room2 {
+    width: 100%;
+    height: 58vh;
+  }
+
+  img.displaySlide {
+    display: inline-flex;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  .slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 10px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .prev {
+    left: 0;
+  }
+  .next {
+    right: 0;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0.5;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  #a_left {
+    width: 30%;
+    margin-left: 5vw;
+    margin-right: 10vw;
+    height: 58vh;
+    background-color: rgb(6, 97, 97);
+    color: rgb(255, 230, 185);
+  }
+
+  #a_left div {
+    text-align: left;
+    padding: 10px;
+  }
+
+  .center {
+    width: 50%;
+    margin: auto;
+    display: flex;
+  }
+
+  header {
+    background-color: white;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+  }
+
+  #p_logo {
+    object-fit: cover;
+    height: 100px;
+    width: 200px;
+  }
+
+  #headernav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    width: 100%;
+    background-color: tomato;
+  }
+
+  #headernav a {
+    color: darkblue;
+    text-decoration: none;
+  }
+
+  nav ul li {
+    display: inline-flex;
+    padding: 0 10px;
+  }
+
+  .form {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(220, 168, 45, 0.648);
+    margin-top: 23vh;
+    margin-bottom: 10px;
+    min-width: 600px;
+  }
+
+  #form_contact {
+    margin-top: 20vh;
+    height: 40vw;
+    width: 60vw;
+  }
+
+  label,
+  input,
+  textarea {
+    display: flex;
+    margin-bottom: 10px;
+    width: 40vw;
+    max-width: 40vw;
+  }
+
+  textarea {
+    max-height: 15vh;
+    height: 20vw;
+  }
+
+  #embed {
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .submit-button {
+    max-width: 6vw;
+  }
+
   #footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    background-color: tomato;
     font-size: smaller;
   }
 }

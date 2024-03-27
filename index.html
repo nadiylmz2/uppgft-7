@@ -14,7 +14,7 @@
         <nav id="headernav">
           <ul>
             <li><a href="index.html"> Home </a></li>
-            <li><a href="boka.html"> Book </a></li>
+            <li><a href="boka.html"> Booking </a></li>
             <li><a href="hitta.html"> Find </a></li>
             <li><a href="kontakta.html"> Contact </a></li>
           </ul>
@@ -34,9 +34,31 @@
             </p>
           </div>
         </article>
-        <div id="a_right">
-          <img src="ho_photo.webp" alt="Hotel Photo" id="ho_photo" />
+        <div class="slider">
+          <div class="slides">
+            <img
+              class="slide"
+              src="h_room1.webp"
+              alt="Hotel room 1"
+              id="h_room1"
+            />
+            <img
+              class="slide"
+              src="h_room2.webp"
+              alt="Hotel room 2"
+              id="h_room2"
+            />
+            <img
+              class="slide"
+              src="ho_photo.webp"
+              alt="Hotel room 3"
+              id="ho_photo"
+            />
+          </div>
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
         </div>
+        <script src="script.js"></script>
       </div>
       <div id="footer" class="center">
         <p>Hotell Bright | Storgatan 1 | 123 45 Storstad | 012 - 12 34 56</p>
