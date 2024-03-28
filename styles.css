@@ -1,14 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&display=swap");
 * {
   font-family: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium",
     "Nimbus Sans Narrow", sans-serif-condensed, sans-serif;
-  font-weight: normal;
+  font-weight: 400;
 }
-
 body {
-  background-color: wheat;
+  background-color: #f5deb3;
 }
-
 .slider {
   position: relative;
   display: flex;
@@ -17,20 +14,17 @@ body {
   overflow: hidden;
   margin-right: 5vw;
 }
-
 .slider img {
   object-fit: contain;
   display: none;
   float: right;
 }
-
 #ho_photo,
 #h_room1,
 #h_room2 {
   width: 100%;
   height: 58vh;
 }
-
 img.displaySlide {
   display: inline-flex;
   animation-name: fade;
@@ -41,9 +35,9 @@ img.displaySlide {
   top: 50%;
   transform: translateY(-50%);
   font-size: 2rem;
-  padding: 10px 10px;
+  padding: 10px;
   background-color: hsla(0, 0%, 0%, 0.5);
-  color: white;
+  color: #fff;
   border: none;
   cursor: pointer;
 }
@@ -61,7 +55,6 @@ img.displaySlide {
     opacity: 1;
   }
 }
-
 .container {
   display: flex;
   justify-content: center;
@@ -72,41 +65,35 @@ img.displaySlide {
   top: 25vh;
   height: 58vh;
 }
-
 #a_left {
   width: 30%;
   margin-left: 5vw;
   margin-right: 10vw;
   height: 58vh;
-  background-color: rgb(6, 97, 97);
-  color: rgb(255, 230, 185);
+  background-color: #066161;
+  color: #ffe6b9;
 }
-
 #a_left div {
   text-align: left;
   padding: 10px;
 }
-
 .center {
   width: 50%;
   margin: auto;
   display: flex;
 }
-
 header {
-  background-color: white;
+  background-color: #fff;
   top: 0;
   left: 0;
   position: fixed;
   width: 100%;
 }
-
 #p_logo {
   object-fit: cover;
   height: 100px;
   width: 200px;
 }
-
 #headernav {
   position: fixed;
   display: flex;
@@ -114,19 +101,16 @@ header {
   align-items: center;
   height: 2.5rem;
   width: 100%;
-  background-color: tomato;
+  background-color: #ff6347;
 }
-
 #headernav a {
-  color: darkblue;
+  color: #00008b;
   text-decoration: none;
 }
-
 nav ul li {
   display: inline-flex;
   padding: 0 10px;
 }
-
 #footer {
   position: fixed;
   bottom: 0;
@@ -137,9 +121,8 @@ nav ul li {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: tomato;
+  background-color: #ff6347;
 }
-
 .form {
   width: 50%;
   margin: auto;
@@ -152,7 +135,6 @@ nav ul li {
   margin-bottom: 10px;
   min-width: 600px;
 }
-
 #form_contact {
   width: 50%;
   margin: auto;
@@ -167,7 +149,6 @@ nav ul li {
   width: 50vw;
   min-width: 40vw;
 }
-
 label,
 input,
 textarea {
@@ -176,64 +157,54 @@ textarea {
   width: 40vw;
   max-width: 40vw;
 }
-
 textarea {
   max-height: 15vh;
   height: 20vw;
 }
-
 #embed {
   margin-top: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .submit-button {
   max-width: 15vw;
   justify-content: center;
 }
-
 @media (max-width: 800px) {
   .container {
     flex-direction: column;
     top: 5vh;
     height: 130vh;
   }
-
   img.displaySlide {
     display: inline-flex;
     animation-name: fade;
     animation-duration: 3s;
   }
-
   .slider button {
     font-size: 0.5rem;
   }
-
   #ho_photo,
   #h_room1,
   #h_room2 {
     height: 48vh;
     width: 70vw;
   }
-
   #a_left {
     font-size: 2vh;
     margin-left: 5vw;
     margin-right: 10vw;
     height: 40vh;
     width: 70vw;
-    background-color: rgb(6, 97, 97);
-    color: rgb(255, 230, 185);
+    background-color: #066161;
+    color: #ffe6b9;
     overflow-y: visible;
   }
-
   #a_left div {
     text-align: left;
     padding: 10px;
   }
-
   header {
     z-index: 10;
   }
@@ -241,7 +212,6 @@ textarea {
     font-size: small;
     height: 4vh;
   }
-
   .form {
     min-width: 30vw;
     width: auto;
@@ -249,7 +219,6 @@ textarea {
     padding: 5px;
     margin-bottom: auto;
   }
-
   #form_contact {
     padding: 3vh;
     min-width: 30vw;
@@ -257,16 +226,13 @@ textarea {
     height: auto;
     margin-bottom: auto;
   }
-
   .submit-button {
     max-width: 15vw;
     justify-content: center;
   }
-
   #footer {
     font-size: 0.75rem;
   }
-
   nav ul li {
     padding: 0 5px;
   }
