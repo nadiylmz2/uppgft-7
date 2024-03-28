@@ -64,7 +64,6 @@ img.displaySlide {
 
 .container {
   display: flex;
-  justify-content: space-around;
   justify-content: center;
   align-items: center;
   position: absolute;
@@ -184,9 +183,10 @@ textarea {
 }
 
 #embed {
-  margin-top: 25vh;
+  margin-top: 20vh;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .submit-button {
@@ -194,11 +194,11 @@ textarea {
   justify-content: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .container {
     flex-direction: column;
-    top: 24vh;
-    height: 60vh;
+    top: 5vh;
+    height: 130vh;
   }
 
   img.displaySlide {
@@ -207,21 +207,26 @@ textarea {
     animation-duration: 3s;
   }
 
+  .slider button {
+    font-size: 0.5rem;
+  }
+
   #ho_photo,
   #h_room1,
   #h_room2 {
-    height: 58vh;
+    height: 48vh;
     width: 70vw;
   }
 
   #a_left {
-    margin-bottom: 5vh;
+    font-size: 2vh;
     margin-left: 5vw;
     margin-right: 10vw;
-    height: 58vh;
+    height: 40vh;
     width: 70vw;
     background-color: rgb(6, 97, 97);
     color: rgb(255, 230, 185);
+    overflow-y: visible;
   }
 
   #a_left div {
@@ -229,17 +234,40 @@ textarea {
     padding: 10px;
   }
 
+  header {
+    z-index: 10;
+  }
+  #headernav {
+    font-size: small;
+    height: 4vh;
+  }
+
   .form {
     min-width: 30vw;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    margin-bottom: auto;
   }
 
   #form_contact {
     padding: 3vh;
     min-width: 30vw;
+    width: auto;
+    height: auto;
+    margin-bottom: auto;
   }
 
   .submit-button {
     max-width: 15vw;
     justify-content: center;
+  }
+
+  #footer {
+    font-size: 0.75rem;
+  }
+
+  nav ul li {
+    padding: 0 5px;
   }
 }
