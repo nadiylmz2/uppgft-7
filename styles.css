@@ -236,4 +236,7 @@ textarea {
   nav ul li {
     padding: 0 5px;
   }
+  #iframe {
+    height: 70vh;
+  }
 }
